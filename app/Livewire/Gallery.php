@@ -9,6 +9,11 @@ class Gallery extends Component
     public $isUploading = true;
     public $images = [];
 
+    public function mount()
+    {
+        
+    }
+
     public function render()
     {
         return view('livewire.gallery')->layout("layouts.app");

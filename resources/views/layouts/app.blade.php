@@ -187,7 +187,6 @@
    </div>
    <!-- End wrapper-->
    <!--Javascript-->
-   @livewireScripts
    <script src="/frontend/html/js/jquery-1.12.4.min.js"></script>
    <script src="/frontend/html/js/jquery.flexslider-min.js"></script>
    <script src="/frontend/html/js/smooth-scroll.js"></script>
@@ -199,6 +198,7 @@
    <script src="/frontend/html/js/script.js"></script>
    <!-- Google analytics -->
    <!-- End google analytics -->
+   @livewireScripts
 </body>
 
 </html>

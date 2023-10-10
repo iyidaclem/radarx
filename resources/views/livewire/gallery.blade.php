@@ -1,5 +1,6 @@
 <div>
 
+<button class="btn btn-primary" wire:click="$this->toggleUpload()">Upload Pictures</button>
 
     @section("page_cover")
     <img src="/frontend/html/img/gallery.jpeg" alt="">
