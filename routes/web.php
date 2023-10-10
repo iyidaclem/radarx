@@ -26,7 +26,7 @@ Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::middleware("auth")->group(function(){
+// Route::middleware("auth")->group(function(){
 
     Route::get("/videos", Video::class);
     Route::get("/gallery", Gallery::class);
@@ -34,4 +34,4 @@ Route::middleware("auth")->group(function(){
     Route::get("/contact", Contact::class);
     Route::get("/merch", Merch::class);
 
-});
+// });
