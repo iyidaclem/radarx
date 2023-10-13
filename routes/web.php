@@ -5,6 +5,7 @@ use App\Livewire\Contact;
 use App\Livewire\Gallery;
 use App\Livewire\Merch;
 use App\Livewire\Video;
+use App\Livewire\Welcome;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -18,9 +19,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', Welcome::class);
 
 Auth::routes();
 

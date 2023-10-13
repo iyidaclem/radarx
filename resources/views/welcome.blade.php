@@ -21,7 +21,10 @@
          <div class="col-12 col-md-10 col-lg-9 ">
             <div class="block-content text-center gap-one-bottom-md">
                <div class="block-title ">
-                  <h1 class="uppercase">Latest Videos</h1>
+                  <h1 class="uppercase">Videos</h1>
+                  <video id="currentvideo" width="100%" height="auto" autoplay loop muted controls>
+                     <source src="/videos/Website.mov">
+                  </video>
                </div>
             </div>
          </div>
