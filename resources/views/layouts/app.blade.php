@@ -16,7 +16,7 @@
    <link href="/frontend/html/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
    <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
-   @livewireStyles
+
 </head>
 
 <body>
@@ -175,7 +175,6 @@
    <script src="/frontend/html/js/script.js"></script>
    <!-- Google analytics -->
    <!-- End google analytics -->
-   @livewireScripts
 </body>
 
 </html>

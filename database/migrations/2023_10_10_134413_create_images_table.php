@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('images', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("user_id");
-            $table->string('url');
-            $table->string('title')->nullable();
+            $table->string("title")->nullable();
+            $table->string("group_id")->nullable();
+            $table->string("url");
             $table->timestamps();
         });
     }
