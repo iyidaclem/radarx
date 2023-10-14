@@ -1,4 +1,6 @@
 <div>
+
+
     @section("page_cover")
     <li>
         <div class="background-img zoom">
@@ -49,7 +51,7 @@
     </li>
     @endsection
 
-    @section('content')
+
     <!--End hero section-->
     <!--Latest album section-->
     <section id="album" class="latest main bg-light">
@@ -60,8 +62,7 @@
                 <div class="col-12">
                     <div class="card" style="width: 100%;">
                         <div class="card-body">
-                            <video id="currentvideo" width="100%" height="auto" autoplay loop muted controls>
-                                <source src="{{$currentVideo}}">
+                            <video id="currentvideo" width="100%" src="{{$currentVideo}}" height="auto" autoplay loop muted controls>
                             </video>
                         </div>
                     </div>
@@ -70,11 +71,11 @@
                 <div class="col-4">
                     <div class="card" style="width: 18rem;">
                         <div class="card-body">
-                            <video width="100%" height="200px" autoplay loop muted controls>
-                                <source src="/videos/website.mov">
+                            <video width="100%" height="200px" src="/videos/website.mov" autoplay loop muted controls>
+                               
                             </video>
-                            <p>Welcome Video</p>
-                            <!-- <button class="btn btn-danger" wire:click="changeVideo('/videos/website.mov')">Play</button> -->
+                            <!-- <p>Welcome Video</p> -->
+                            <button class="btn btn-danger" onclick="changeVideo('/videos/website.mov')">Play</button>
                         </div>
                     </div>
                 </div>
@@ -84,19 +85,8 @@
                             <video width="100%" height="200px" autoplay loop muted controls>
                                 <source src="/videos/house.mov">
                             </video>
-                            <p>Welcome Video</p>
-                            <!-- <button class="btn btn-danger" wire:click="changeVideo('/videos/house.mov')">Play</button> -->
-                        </div>
-                    </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <video width="100%" height="200px" autoplay loop muted controls>
-                                <source src="/videos/website.mov">
-                            </video>
-                            <p>Welcome Video</p>
-                            <!-- <button class="btn btn-danger" wire:click="changeVideo('/videos/website.mov')">Play</button> -->
+                            <!-- <p>Welcome Video</p> -->
+                            <button class="btn btn-danger" onclick="changeVideo('/videos/house.mov')">Play</button>
                         </div>
                     </div>
                 </div>
@@ -104,7 +94,22 @@
             <!--End row-->
         </div>
         <!--End container-->
+        <script>
+            function changeVideo(url) {
 
+                // Get the video element
+                var video = document.getElementById("currentvideo");
+                video.style.display = "none";
+                // Change the source URL
+                video.src = url;
+
+                // Load the new video source
+                video.load();
+
+                // Play the video
+                video.play();
+            }
+        </script>
     </section>
     <!--End latest album section-->
     <!--About section-->
@@ -175,6 +180,19 @@
         <!--End container-->
     </section>
     <!--End about section-->
+
+    <h2 class="w3-center">Recent Pictures</h2>
+
+    <div class="w3-content w3-display-container">
+        @foreach($gallery as $ga)
+        <img class="mySlides" src="/storage/{{$ga->url}}" style="width:100%">
+        @endforeach
+
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+
     <!--Discography section-->
     <section id="discography" class="discography main">
         <!--Container-->
@@ -337,5 +355,4 @@
         </div>
         <!--End container-->
     </section>
-    @endsection
 </div>

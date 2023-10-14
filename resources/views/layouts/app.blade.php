@@ -17,6 +17,13 @@
    <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
 
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <style>
+      .mySlides {
+         display: none;
+      }
+   </style>
+
 </head>
 
 <body>
@@ -175,6 +182,30 @@
    <script src="/frontend/html/js/script.js"></script>
    <!-- Google analytics -->
    <!-- End google analytics -->
+
+   <script>
+      var slideIndex = 1;
+      showDivs(slideIndex);
+
+      function plusDivs(n) {
+         showDivs(slideIndex += n);
+      }
+
+      function showDivs(n) {
+         var i;
+         var x = document.getElementsByClassName("mySlides");
+         if (n > x.length) {
+            slideIndex = 1
+         }
+         if (n < 1) {
+            slideIndex = x.length
+         }
+         for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+         }
+         x[slideIndex - 1].style.display = "block";
+      }
+   </script>
 </body>
 
 </html>
