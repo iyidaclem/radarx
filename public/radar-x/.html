@@ -1,0 +1,319 @@
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Durbarinn - Restaurant HTML5 Template</title>
+    
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/plugin.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/dashboard.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/icons.css" rel="stylesheet" type="text/css">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="stylesheet" href="fonts/line-icons.css" type="text/css">
+    </head>
+    <body style="background-image: url(&quot;images/banner.png&quot;); overflow: visible;">
+    
+    <div id="preloader" style="display: none;">
+    <div id="status" style="display: none;"></div>
+    </div>
+    
+    
+    <div id="dashboard">
+    <div class="container-fluid p-0">
+    <div class="dashboard-main">
+    <div class="row">
+    <div class="col-lg-2 col-md-12 col-sm-12 col-xs-12 p-0">
+    <div class="dash-logo text-center">
+    <a href="" class="intro-x flex items-center pb-4 d-inline-block">
+    <img src="images/logo-white.png" alt="">
+    </a>
+    </div>
+    
+    <a href="#" class="dashboard-responsive-nav-trigger"><i class="fa fa-reorder"></i> Dashboard Navigation</a>
+    <div class="dashboard-nav">
+    <div class="dashboard-nav-inner">
+    <ul>
+    <li><a href="dashboard.html"><i class="sl sl-icon-settings"></i> Dashboard</a></li>
+    <li class="active"><a href="dashboard-my-profile.html"><i class="sl sl-icon-user"></i> Profile</a></li>
+    <li><a href="dashboard-messages.html"><i class="sl sl-icon-envelope-open"></i> Messages</a></li>
+    <li><a href="dashboard-reviews.html"><i class="sl sl-icon-star"></i> Reviews</a></li>
+    <li><a href="dashboard-add-new.html"><i class="sl sl-icon-plus"></i> Add Items</a></li>
+    <li><a href="dashboard-list.html"><i class="sl sl-icon-layers"></i> Oder Lists</a></li>
+    <li><a href="dashboard-history.html"><i class="fa fa-list-ul"></i>Booking History</a></li>
+    <li><a href="login.html"><i class="sl sl-icon-power"></i> Logout</a></li>
+    </ul>
+    </div>
+    </div>
+    </div>
+    <div class="col-lg-10 col-md-12 col-sm-12 col-xs-12 p-0">
+    <div class="dashboard-content">
+    <div class="row mb-4">
+    <div class="col-lg-12">
+    <div class="user-title d-flex align-items-center justify-content-between">
+    <div class="profile-sec float-left d-flex align-items-center">
+    <div class="dash-content">
+    <p class="m-0"><a href="#"><i class="fa fa-home"></i></a> | <span class="red">My Profile</span></p>
+    </div>
+     </div>
+    <div class="dropdown">
+    <button class="btn text-success dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <i class="fa fa-user"></i> My Account
+    </button>
+    <div class="dropdown-menu border-radius-10" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#"><i class="sl sl-icon-settings"></i> Settings</a>
+    <a class="dropdown-item" href="#"><i class="sl sl-icon-user"></i> Profile</a>
+    <a class="dropdown-item" href="#"><i class="sl sl-icon-lock"></i> Change Password</a>
+    <a class="dropdown-item" href="#"><i class="sl sl-icon-power"></i> Logout</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="dashboard-form mb-4">
+    <div class="row">
+    
+    <div class="col-lg-6 col-md-6 col-xs-12 padding-right-30">
+    <div class="dashboard-list">
+    <h4 class="gray">Profile Details</h4>
+    <div class="dashboard-list-static">
+    
+    <div class="edit-profile-photo">
+    <img src="images/user-avatar.jpg" alt="">
+    <div class="change-photo-btn">
+    <div class="photoUpload">
+    <span><i class="fa fa-upload"></i> Upload Photo</span>
+    <input type="file" class="upload">
+    </div>
+    </div>
+    </div>
+    
+    <div class="my-profile">
+    <div class="form-group">
+    <label>Your Name *</label>
+    <input value="Tom Perrin" type="text">
+    </div>
+    <div class="form-group">
+    <label>Phone Number *</label>
+    <input value="(123) 123-456" type="text">
+    </div>
+    <div class="form-group">
+    <label>Email Address *</label>
+    <input value="tom@example.com" type="text">
+    </div>
+    <div class="form-group">
+    <label>Your Bio *</label>
+    <textarea name="notes" id="notes" cols="30" rows="10">Maecenas quis consequat libero, a feugiat eros. Nunc ut lacinia tortor morbi ultricies laoreet ullamcorper phasellus semper</textarea>
+    </div>
+    <div class="form-group">
+    <label class="twitter-input"><i class="fab fa-twitter"></i> Twitter</label>
+    <input placeholder="https://www.twitter.com/" type="text">
+    </div>
+    <div class="form-group">
+    <label class="fb-input"><i class="fab fa-facebook"></i> Facebook</label>
+    <input placeholder="https://www.facebook.com/" type="text">
+    </div>
+    </div>
+    <div class="form-btn">
+    <a href="#" class="nir-btn">SAVE CHANGE</a>
+    </div>
+    </div>
+    </div>
+    </div>
+    
+    <div class="col-lg-6 col-md-6 col-xs-12 padding-left-30">
+    <div class="dashboard-list margin-top-0">
+    <h4 class="gray">Your Address</h4>
+    <div class="dashboard-list-static">
+    
+    <div class="my-profile">
+    <div class="form-group">
+    <label>Company Name</label>
+    <input type="text">
+    </div>
+    <div class="form-group">
+    <label>Address *</label>
+    <input type="text">
+    </div>
+    <div class="form-group">
+    <label>Zip Code *</label>
+    <input type="text">
+    </div>
+    <div class="form-group">
+    <label>Country *</label>
+    <input type="text">
+    </div>
+    <div class="form-group">
+    <label>City *</label>
+    <input type="text">
+    </div>
+    <div class="form-group">
+    <label>Region/State *</label>
+    <input type="text">
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="dashboard-form mb-4">
+    <div class="dashboard-location">
+    <h4>Location</h4>
+    <form>
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group">
+    <label>Home Airport</label>
+    <input type="text">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group">
+    <label>Address</label>
+    <input type="email">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group">
+    <label>City</label>
+    <input type="text">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group">
+    <label>State/Province/Region</label>
+    <input type="text">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group">
+    <label>ZIP Code/Postal Code</label>
+    <input type="text">
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+    <div class="form-group">
+    <label>Country</label>
+    <input type="text">
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div class="form-btn">
+    <a href="#" class="nir-btn">SAVE CHANGE</a>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    <div class="dashboard-form mb-4">
+    <div class="dashboard-password">
+    <h4>Change Password</h4>
+    <form>
+    <div class="row">
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group">
+    <label>Current Password</label>
+    <input type="password" placeholder="*********">
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group">
+    <label>New Password</label>
+    <input type="password">
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
+    <div class="form-group">
+    <label>Re-enter Password</label>
+    <input type="password">
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div class="form-btn mar-top-15">
+    <a href="#" class="nir-btn">SAVE CHANGE</a>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    <div class="dashboard-form mb-4">
+    <div class="dashboard-password">
+    <h4>Currency</h4>
+    <form>
+    <div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="form-group currency-content">
+    <label>Primary Curreny</label>
+    <select>
+    <option>USD</option>
+    <option>USD</option>
+    <option>USD</option>
+    <option>USD</option>
+    </select>
+    </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+    <div class="form-group currency-content">
+    <label>Tax(%)</label>
+    <input type="text" placeholder="15">
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div class="currency-content">
+    <p class="bold">Send Enrique Mail</p>
+    <input type="checkbox"> Admin &amp; Customer <br>
+    <input type="checkbox"> Partner &amp; Customer <br>
+    <input type="checkbox"> Admin, Partner &amp; Customer
+    </div>
+    </div>
+    <div class="col-lg-12">
+    <div class="form-btn mt-2">
+    <a href="#" class="nir-btn">SAVE CHANGE</a>
+    </div>
+    </div>
+    </div>
+    </form>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+     
+    </div>
+    </div>
+    
+    
+    <footer class="pb-2 pt-2 transparent">
+    <div class="container-fluid">
+    <div class="copyright-text text-center">
+    <p class="m-0 white">2020 Durbarinn. All rights reserved.</p>
+    </div>
+    </div>
+    </footer>
+    
+    
+    <div id="back-to-top" style="display: none;">
+    <a href="#"></a>
+    </div>
+    
+    
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/plugin.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/custom-nav.js"></script>
+    <script src="js/jpanelmenu.min.js"></script>
+    <script src="js/dashboard-custom.js"></script>
+    
+    <div id="lightboxOverlay" tabindex="-1" class="lightboxOverlay" style="display: none;"></div><div id="lightbox" tabindex="-1" class="lightbox" style="display: none;"><div class="lb-outerContainer"><div class="lb-container"><img class="lb-image" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" alt=""><div class="lb-nav"><a class="lb-prev" aria-label="Previous image" href=""></a><a class="lb-next" aria-label="Next image" href=""></a></div><div class="lb-loader"><a class="lb-cancel"></a></div></div></div><div class="lb-dataContainer"><div class="lb-data"><div class="lb-details"><span class="lb-caption"></span><span class="lb-number"></span></div><div class="lb-closeContainer"><a class="lb-close"></a></div></div></div></div></body></html>
