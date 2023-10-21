@@ -66,21 +66,21 @@
                                     .slicknav_menu {
                                         width: 100%;
                                         margin-left: 20%;
-                                        /* position: relative; */
                                     }
                                 }
                             </style>
                         </div>
                     </div>
                 </div>
-                <div id="slicknav-mobile" style="top: 20%; right: 100%; z-index: 99999">
-                    <ul class="d-none bg-danger">
 
+                <div id="slicknav-mobile" style="top: 20%; right: 100%; z-index: 99999">
+                    <ul class="d-none">
                         <li><a class="io" href="/">Home</a></li>
                         <li><a class="io" href="/event">Events</a></li>
                         <li><a class="io" href="/merch">merch</a></li>
                     </ul>
                 </div>
+
         </div>
         </div>
         </div>
