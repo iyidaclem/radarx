@@ -383,7 +383,7 @@
                         <p style="text-align: center; width: 100%; margin-left: 50%;">
                             Copyright &copy;<script>
                                 document.write(new Date().getFullYear());
-                            </script> All rights reserved</p>
+                            </script> All rights reserved! </p>
                     </div>
 
                 </div>

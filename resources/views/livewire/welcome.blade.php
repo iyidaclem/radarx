@@ -190,7 +190,7 @@
                     note and brushstroke. Radar X's creative process is a symphony of expression, where he seamlessly blends various art forms.
                     In his world, music, visuals, and words converge to create a breathtaking tapestry of creativity.</p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <p class="white mb-0">
                     But Radar X's journey goes beyond this lifetime; it extends across lifetimes, marking a cosmic odyssey of
                     evolution that transcends boundaries and challenges norms. His artistry isn't confined to the studio or the stage.
@@ -199,7 +199,7 @@
                     using visual branding elements to enhance the experience
                 </p>
             </div>
-            <div class="col-4">
+            <div class="col-md-4">
                 <p class="white mb-0">Yet, beyond his art, Radar X possesses a unique superpower — that of building bridges. He's dedicated to connecting
                     Africa through the enchantment of entertainment and technology. He nurtures a community of MagiXians, catalysts for a
                     cultural renaissance, seamlessly merging tradition with innovation. In the enchanting world of Radar X, the Vybe Magixian,
