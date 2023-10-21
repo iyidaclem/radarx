@@ -1,19 +1,11 @@
 @extends('layouts.app')
-@section("page_cover")
-<img src="/frontend/html/img/2.jpg" alt="">
-@endsection
 
-@section("cover_content")
-<div class="back-rect"></div>
-<h1 class="large text-white uppercase mb-0">Registration page</h1>
-<div class="front-rect"></div>
-@endsection
 @section('content')
-<div class="container bg-muted">
+<div class="container text-dark" style="margin-top: 100px">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
-                <div class="card-header text-light">{{ __('Register') }}</div>
+                <div class="card-header text-dark">{{ __('Register') }}</div>
 
                 <div class="card-body">
                     <form method="POST" action="{{ route('register') }}">

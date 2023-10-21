@@ -106,55 +106,9 @@
         <div class="container">
             <div class="about-inner">
                 <div class="row d-flex d-md-flex align-items-center">
-                    <div class="col-lg-3">
-                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
-                            <img style="height: 280px;" src="/images/1.png" class="card-img-top" alt="...">
-
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">JAGA_JAGA</h5>
-
-                                <a href="#" class="btn btn-outline-primary">Watch <span class="text-danger"><i class="fa fa-video"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
-                            <img style="height: 280px;" src="/radar-x/images/personal-service.jpg" class="card-img-top" alt="...">
-
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">JAGA_JAGA</h5>
-
-                                <a href="#" class="btn btn-outline-primary">Watch <span class="text-danger"><i class="fa fa-video"></i></span></a>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
-                            <img style="height: 280px;" src="/radar-x/images/single_blog_3.jpg" class="card-img-top" alt="...">
-
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">JAGA_JAGA</h5>
-
-                                <a href="#" class="btn btn-outline-primary">Watch <span class="text-danger"><i class="fa fa-video"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3">
-                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
-                            <img style="height: 280px;" src="/radar-x/images/single_blog_1.jpg" class="card-img-top" alt="...">
-
-                            <div class="card-body">
-                                <h5 class="card-title text-primary">JAGA_JAGA</h5>
-
-                                <a href="#" class="btn btn-outline-primary">Watch <span class="text-danger"><i class="fa fa-video"></i></span></a>
-                            </div>
-                        </div>
-                    </div>
-
+                    
                 </div>
             </div>
         </div>
-</div>
 </section>
 </div>

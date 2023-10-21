@@ -1,16 +1,8 @@
 @extends('layouts.app')
-@section("page_cover")
-<img src="/frontend/html/img/1.jpg" alt="">
-@endsection
 
-@section("cover_content")
-<div class="back-rect"></div>
-<h1 class="large text-white uppercase mb-0">Login</h1>
-<h5 class="mb-0 text-white uppercase">Login into the app</h5>
-<div class="front-rect"></div>
-@endsection
-@section('content')
-<div class="container bg-muted">
+@section("content")
+
+<div class="container" style="margin-top: 100px;;">
     <div class="row justify-content-center">
         <div class="col-md-8">
             <div class="card">
@@ -19,7 +11,6 @@
                 <div class="card-body">
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
-
                         <div class="row mb-3">
                             <label for="email" class="col-md-4 col-form-label text-md-end">{{ __('Email Address') }}</label>
 
@@ -62,7 +53,7 @@
 
                         <div class="row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-darl">
+                                <button type="submit" class="btn btn-dark">
                                     {{ __('Login') }}
                                 </button>
 
@@ -79,4 +70,5 @@
         </div>
     </div>
 </div>
+
 @endsection

@@ -17,10 +17,18 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/radar-x/css/line-icons.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <style>
+        body,
+        html {
+            background-color: black !important;
+        }
+    </style>
+    @livewireStyles
 </head>
 
-<body style="background-image:url('/radar-x/images/bg/team-bg1.png');">
+<body style="background-image:url('/radar-x/images/bg/team-bg1.png');" style="">
 
     <div id="preloader">
         <div id="status"></div>
@@ -47,6 +55,13 @@
                                 <li><a class="pp" href="/">Home</a></li>
                                 <li><a class="pp" href="/events">Events</a></li>
                                 <li><a class="pp" href="/merch">merch</a></li>
+                                @if(auth::check())
+                                <li><a href="javascript:void" onclick="document.getElementById('logout').click()"><button class="btn btn-danger">Logout</button></a></li>
+                                <form action="{{route('logout')}}" method="POST">
+                                    @csrf
+                                    <input type="submit" value="" id="logout">
+                                </form>
+                                @endif
                             </ul>
 
                             <style>
@@ -70,15 +85,16 @@
                                 }
                             </style>
                         </div>
-                    </div>
-                </div>
 
-                <div id="slicknav-mobile" style="top: 20%; right: 100%; z-index: 99999">
-                    <ul class="d-none">
-                        <li><a class="io" href="/">Home</a></li>
-                        <li><a class="io" href="/event">Events</a></li>
-                        <li><a class="io" href="/merch">merch</a></li>
-                    </ul>
+                        <div id="slicknav-mobile" style="margin-left: -20%;">
+                            <ul class="d-none">
+                                <li><a class="io" href="/">Home</a></li>
+                                <li><a class="io" href="/event">Events</a></li>
+                                <li><a class="io" href="/merch">merch</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
 
         </div>
@@ -130,7 +146,7 @@
             <button type="submit" class="btn btn-primary">Search</button>
         </form>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="/radar-x/js/jquery-3.4.1.min.js"></script>
     <script src="/radar-x/js/bootstrap.min.js"></script>
@@ -179,6 +195,7 @@
             }
         })();
     </script>
+    @livewireScripts
 </body>
 
 </html>

@@ -11,7 +11,7 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('merches', function (Blueprint $table) {
+        Schema::create('events', function (Blueprint $table) {
             $table->id();
             $table->bigInteger("user_id");
             $table->string('url');
@@ -19,6 +19,7 @@ return new class extends Migration
             $table->text('image')->nullable();
             $table->text("info")->nullable();
             $table->double('price')->default("0.0");
+            $table->softDeletes();
             $table->timestamps();
         });
     }
@@ -28,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('merches');
+        Schema::dropIfExists('events');
     }
 };

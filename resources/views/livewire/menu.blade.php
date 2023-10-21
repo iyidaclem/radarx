@@ -9,6 +9,7 @@
             background-color: #333;
             padding: 15px;
             text-align: center;
+            
         }
 
         #toggle-menu {
@@ -48,7 +49,7 @@
     </style>
 
     <div class="mobile-menu">
-        <button id="toggle-menu">☰ Menu</button>
+        <button id="toggle-menu">☰</button>
         <ul class="menu-list">
             <li><a class="io" href="/">Home</a></li>
             <li><a class="io" href="/event">Events</a></li>

@@ -68,7 +68,7 @@
                 <div class="row d-md-flex align-items-center">
                     <div class="col-lg-6 col-md-12 mb-4">
                         <div class="left-side-content">
-                            <h3 class="white mb-0">Videos</h3>
+                            <h3 class="white mb-3">Videos</h3>
                             <h2 class="mb-0 red">
                                 <span class="discount-price">Radar</span> x
                             </h2>
@@ -82,12 +82,12 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="about-image-box">
-                                    <iframe width="100%" src="https://www.youtube.com/embed/YnS4RtyILJs?si=E-X1xxttH3N9o3FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/2nj_hby6qLg?si=sf9qYGbHJEcX4rlO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="about-image-box mb-2">
-                                    <iframe width="100%" src="https://www.youtube.com/embed/YnS4RtyILJs?si=E-X1xxttH3N9o3FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/A3LjvW1fXM8?si=zV5_BPVZ55qhnO_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>
                                 <div class="about-image-box">
                                     <iframe width="100%" src="https://www.youtube.com/embed/0ekm_4x5JY0?si=JB9mhvntiWxOPWzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -185,7 +185,7 @@
                 <h1 class="text-danger">About Radar X</h1>
             </div>
             <div class="col-md-4">
-                <p class="white mb-0"> Introducing Radar X, known to the world as "THE VYBE MAGIXIAN." He's a Transformative Junkie, an artist whose work
+                <p class="white mb-3"> Introducing Radar X, known to the world as "THE VYBE MAGIXIAN." He's a Transformative Junkie, an artist whose work
                     opens the door to boundless possibilities and defies limits, echoing the mantra that "anything is possible" with every
                     note and brushstroke. Radar X's creative process is a symphony of expression, where he seamlessly blends various art forms.
                     In his world, music, visuals, and words converge to create a breathtaking tapestry of creativity.</p>
@@ -200,7 +200,7 @@
                 </p>
             </div>
             <div class="col-md-4">
-                <p class="white mb-0">Yet, beyond his art, Radar X possesses a unique superpower — that of building bridges. He's dedicated to connecting
+                <p class="white mb-3">Yet, beyond his art, Radar X possesses a unique superpower — that of building bridges. He's dedicated to connecting
                     Africa through the enchantment of entertainment and technology. He nurtures a community of MagiXians, catalysts for a
                     cultural renaissance, seamlessly merging tradition with innovation. In the enchanting world of Radar X, the Vybe Magixian,
                     the future of Afro creations unfolds, where every
