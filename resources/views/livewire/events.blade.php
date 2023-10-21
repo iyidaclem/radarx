@@ -106,7 +106,7 @@
             <div class="about-inner">
                 <div class="row d-flex d-md-flex align-items-center">
                     <div class="col-lg-3">
-                        <div class="card p-3" style="width: 18rem; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
+                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
                             <img style="height: 280px;" src="/images/1.png" class="card-img-top" alt="...">
 
                             <div class="card-body">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card p-3" style="width: 18rem; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
+                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
                             <img style="height: 280px;" src="/radar-x/images/personal-service.jpg" class="card-img-top" alt="...">
 
                             <div class="card-body">
@@ -129,7 +129,7 @@
 
                     </div>
                     <div class="col-lg-3">
-                        <div class="card p-3" style="width: 18rem; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
+                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
                             <img style="height: 280px;" src="/radar-x/images/single_blog_3.jpg" class="card-img-top" alt="...">
 
                             <div class="card-body">
@@ -140,7 +140,7 @@
                         </div>
                     </div>
                     <div class="col-lg-3">
-                        <div class="card p-3" style="width: 18rem; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
+                        <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
                             <img style="height: 280px;" src="/radar-x/images/single_blog_1.jpg" class="card-img-top" alt="...">
 
                             <div class="card-body">
