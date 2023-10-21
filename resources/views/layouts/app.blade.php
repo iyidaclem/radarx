@@ -1,211 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zxx">
 <head>
-   <!-- Metas -->
-   <meta charset="utf-8">
-   <title>{{env('APP_NAME')}}</title>
-   <meta name="description" content="Radar Xtraodinary">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <!-- Css -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-   <link href="/frontend/html/css/base.css" rel="stylesheet" type="text/css" media="all" />
-   <link href="/frontend/html/css/main.css" rel="stylesheet" type="text/css" media="all" />
-   <link href="/frontend/html/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
-   <link href="/frontend/html/css/magnific-popup.css" rel="stylesheet" type="text/css" media="all" />
-   <link href="/frontend/html/css/fonts.css" rel="stylesheet" type="text/css" media="all" />
-   <link href="http://fonts.googleapis.com/css?family=Dosis:100,300,400,600,700" rel="stylesheet" type="text/css">
-   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,300,400,400i,600,700,800" rel="stylesheet">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{env('APP_NAME')}}</title>
 
-   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-   <style>
-      .mySlides {
-         display: none;
-      }
-   </style>
+<link rel="shortcut icon" type="image/x-icon" href="imges/logo.webp">
 
+<link href="/radar-x/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+
+<link href="/radar-x/css/style.css" rel="stylesheet" type="text/css">
+
+<link href="/radar-x/css/plugin.css" rel="stylesheet" type="text/css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+<link rel="stylesheet" href="/radar-x/css/line-icons.css" type="text/css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
 </head>
+<body style="background-image:url('/radar-x/images/bg/team-bg1.png');">
 
-<body>
-   <!-- Preloader -->
-   <div class="loader">
-      <!-- Preloader inner -->
-      <div class="loader-inner">
-         <svg width="120" height="220" viewbox="0 0 100 100" class="loading-spinner" version="1.1" xmlns="http://www.w3.org/2000/svg">
-            <circle class="spinner" cx="50" cy="50" r="21" fill="#13181d" stroke-width="2" />
-         </svg>
-      </div>
-      <!-- End preloader inner -->
-   </div>
-   <!-- End preloader-->
-   <!--Wrapper-->
-   <div class="wrapper">
-      <div class="block-search-form">
-         <div class="block-content">
-            <div class="container">
-               <!--end of row-->
-               <div class="row justify-content-center">
-                  <div class="col-12 col-md-10 col-lg-8">
-                     <form method="get">
-                        <div class="card  bg-red ">
-                           <div class="card-body  row no-gutters align-items-center">
-                              <div class="col-auto">
-                                 <i class="icon-search"></i>
-                              </div>
-                              <!--end of col-->
-                              <div class="col">
-                                 <input class="form-control form-control-lg form-control-border0" placeholder="Type a keywords..." type="search">
-                              </div>
-                              <!--end of col-->
-                              <div class="col-auto">
-                                 <button type="submit" class="btn  btn-primary uppercase border-3">
-                                    Search now</button>
-                              </div>
-                              <!--end of col-->
-                           </div>
-                        </div>
-                     </form>
-                  </div>
-                  <!--end of col-->
-               </div>
-               <!--end of row-->
-            </div>
-         </div>
-      </div>
-      <!--Hero section-->
-      <section class="hero">
-         <!--Main slider-->
-         <div class="main-slider slider flexslider">
-            <ul class="slides">
-               @yield("page_cover")
-            </ul>
-         </div>
-         <!--End main slider-->
-         <!--Header-->
-         <header class="header default">
-            <div class=" left-part">
-               <a class="logo scroll" href="/">
-                  <h2 class="mb-0 uppercase">{{env("APP_NAME")}}.</h2>
-               </a>
-            </div>
-            <div class="right-part">
-               <nav class="main-nav">
-                  <div class="toggle-mobile-but">
-                     <a href="#" class="mobile-but">
-                        <div class="lines"></div>
-                     </a>
-                  </div>
-                  <ul class="main-menu list-inline">
-                     @if(Auth::check())
-                     <li><a class="scroll list-inline-item" href="/home">Dashboard</a></li>
-                     @else
-                     <li><a class="scroll list-inline-item" href="/">Home</a></li>
-                     @endif
-                     <li><a class="scroll list-inline-item" href="/#about">about</a></li>
-                     <li><a class="scroll list-inline-item" href="/videos">Videos</a></li>
-                     <li><a class="scroll list-inline-item" href="/merch">Merch</a></li>
-                     <li class="dropdown"><a class="scroll list-inline-item" href="/community">Community</a>
-                     </li>
-                     <li><a class="scroll list-inline-item" href="/gallery">Gallery</a></li>
-                     </li>
-                     <li><a class="scroll list-inline-item" href="/contact">Contact</a></li>
+<div id="preloader">
+<div id="status"></div>
+</div>
 
-                     <li class="block-helper">
-                        <a href="#album" class="scroll"><span><i class="icon-cd-2"></i></span></a>
-                     </li>
-                     <li class="block-helper">
-                        <span class="icon search-ico"><i class="icon-search"></i></span>
-                     </li>
-                     <li class="block-helper">
-                        @if(Auth::check())
-                        <button class="btn btn-danger" onclick="document.getElementById('loginbtn').click()">Logout</button>
-                        <form action="{{route('logout')}}" method="post">
-                           @csrf
-                           <input class="d-none" id="loginbtn" type="submit" value="Logout">
-                        </form>
-                        @else
-                        <a href="/login">Login</a>
-                        @endif
-                     </li>
-                  </ul>
-               </nav>
-            </div>
-         </header>
-         <!--End header-->
-      </section>
-      <main class="py-4">
-         @yield('content')
-      </main>
 
-      <!--Contact section-->
-      <footer class="pt-5 pb-5 footer">
-         <!--Container-->
-         <div class="container">
-            <div class="row justify-content-between align-items-center">
-               <div class="col-md-6">
-                  <small class="small"><span>&copy; 2019 all rights reserved - a product of</span> {{env("APP_NAME")}}.</small>
-               </div>
-               <div class="col-md-6 text-md-right">
-                  <ul class="list-inline small">
-                     <li class="list-inline-item">
-                        <a href="#">Privacy Policy</a>
-                     </li>
-                     <li class="list-inline-item">
-                        <a href="#">Terms of Use</a>
-                     </li>
-                     <li class="list-inline-item">
-                        <a href="#">About</a>
-                     </li>
-                     <li class="list-inline-item">
-                        <a href="#">Legal</a>
-                     </li>
-                  </ul>
-               </div>
-            </div>
-         </div>
-         <!--End container-->
-      </footer>
-      <a class="block-top scroll" href="#wrapper">
-         <i class="icon-angle-up"></i></a>
-   </div>
-   <!-- End wrapper-->
-   <!--Javascript-->
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-   <script src="/frontend/html/js/jquery-1.12.4.min.js"></script>
-   <script src="/frontend/html/js/jquery.flexslider-min.js"></script>
-   <script src="/frontend/html/js/smooth-scroll.js"></script>
-   <script src="/frontend/html/js/jquery.magnific-popup.min.js"></script>
-   <script src="/frontend/html/js/audio.min.js"></script>
-   <script src="/frontend/html/js/twitterFetcher_min.js"></script>
-   <script src="/frontend/html/js/jquery.countdown.min.js"></script>
-   <script src="/frontend/html/js/placeholders.min.js"></script>
-   <script src="/frontend/html/js/script.js"></script>
-   <!-- Google analytics -->
-   <!-- End google analytics -->
+    
+<header class="main_header_area headerstye-1">
+    
+    <div class="header_menu w-100 "  >
+    <nav class="navbar navbar-default">
+    <div class="container">
+    <div class="navbar-flex d-flex align-items-center k justify-content-between w-100 pb-2 pt-2">
+    
+    <div class="navbar-header">
+    <a class="navbar-brand" href="/">
+    <h1 class="text-muted">Radar X</h1>
+    </a>
+    </div>
+    
+    <div class="navbar-collapse1 d-lg-flex align-items-center" id="bs-example-navbar-collapse-1">
+    <ul class="nav navbar-nav" id="responsive-menu">
+   
+        <li><a class="pp" href="/">Home</a></li>
+        <li><a class="pp" href="/events">Events</a></li>
+        <li><a class="pp" href="/merch">merch</a></li>
+    </ul>
+  
+    <style>
+        .pp:hover{
+            color: white !important;
+        }
+    li:hover{
+        border-bottom: 4px solid orangered;
+    }
+    .io:hover{
+color: black !important;
+    }
+ 
+    @media (max-width:900px) {
+        .slicknav_menu{ 
+            width: 100%;
+            margin-left: 20%; 
+             /* position: relative; */
+        }
+    }
+ 
+ 
+    </style>
+    </div>
+    </div>
+    </div>
+    <div id="slicknav-mobile" style="">
+ 
+       
+        <li><a class="io" href="/">Home</a></li>
+        <li><a class="io" href="/event">Events</a></li>
+        <li><a class="io" href="/merch">merch</a></li>
+    </ul></div></div>
+    </div>
+    </div>
+    </nav>
+    </div>
+    
+    </header>
 
-   <script>
-      var slideIndex = 1;
-      showDivs(slideIndex);
 
-      function plusDivs(n) {
-         showDivs(slideIndex += n);
-      }
+@yield("content")
 
-      function showDivs(n) {
-         var i;
-         var x = document.getElementsByClassName("mySlides");
-         if (n > x.length) {
-            slideIndex = 1
-         }
-         if (n < 1) {
-            slideIndex = x.length
-         }
-         for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-         }
-         x[slideIndex - 1].style.display = "block";
-      }
-   </script>
-</body>
 
+<footer style="background-image:url(images/bg/team-bg.png);" class="pt-10 bubbles">
+
+
+<div class="footer-copyright">
+<div class="container">
+<div class="copyright-inner d-md-flex align-items-center justify-content-between">
+<div class="copyright-text">
+<p class="m-0 white">2023 Radar<span class="text-danger">-x</span>. All rights reserved.</p>
+</div>
+<div class="social-links">
+<ul>
+<li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+<li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class="overlay"></div>
+<div class="mid-overlay"></div>
+</footer>
+
+
+<div id="back-to-top">
+<a href="#"></a>
+</div>
+
+
+<div id="search1">
+<button type="button" class="close">×</button>
+<form>
+<input type="search" value="" placeholder="type keyword(s) here" />
+<button type="submit" class="btn btn-primary">Search</button>
+</form>
+</div>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="/radar-x/js/jquery-3.4.1.min.js"></script>
+<script src="/radar-x/js/bootstrap.min.js"></script>
+<script src="/radar-x/js/plugin.js"></script>
+<script src="/radar-x/js/particles.js"></script>
+<script src="/radar-x/js/particlerun.js"></script>
+<script src="/radar-x/js/main.js"></script>
+<script src="/radar-x/js/custom-swiper.js"></script>
+<script src="/radar-x/js/custom-nav.js"></script>
+<script src="/radar-x/js/custom-date.js"></script>
+<script>(function(){var js = "window['__CF$cv$params']={r:'75a2f8ab8f58b95c',m:'DL3ICSyke_XqYSZnVZFVnlcrmqU6nxgtf563QIIjscQ-1665778362-0-AS2nl5VWyjAceTvWkRa/y28fT6KB3w+KlLS13JbH5Y5hs1ewSetIUyHxgvAWQnzb8hphwhZ8/4cnn2eBxRC4l4nkwyTOMfdZ+qtC66qk3+OIPoJUN9MxxK64sa+RaXF06g==',s:[0xd21309c626,0x6c0774f670],u:'/cdn-cgi/challenge-platform/h/g'};var now=Date.now()/1000,offset=14400,ts=''+(Math.floor(now)-Math.floor(now%offset)),_cpo=document.createElement('script');_cpo.nonce='',_cpo.src='/cdn-cgi/challenge-platform/h/g/scripts/alpha/invisible.js?ts='+ts,document.getElementsByTagName('head')[0].appendChild(_cpo);";var _0xh = document.createElement('iframe');_0xh.height = 1;_0xh.width = 1;_0xh.style.position = 'absolute';_0xh.style.top = 0;_0xh.style.left = 0;_0xh.style.border = 'none';_0xh.style.visibility = 'hidden';document.body.appendChild(_0xh);function handler() {var _0xi = _0xh.contentDocument || _0xh.contentWindow.document;if (_0xi) {var _0xj = _0xi.createElement('script');_0xj.nonce = '';_0xj.innerHTML = js;_0xi.getElementsByTagName('head')[0].appendChild(_0xj);}}if (document.readyState !== 'loading') {handler();} else if (window.addEventListener) {document.addEventListener('DOMContentLoaded', handler);} else {var prev = document.onreadystatechange || function () {};document.onreadystatechange = function (e) {prev(e);if (document.readyState !== 'loading') {document.onreadystatechange = prev;handler();}};}})();</script></body>
 </html>

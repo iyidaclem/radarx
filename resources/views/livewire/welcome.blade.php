@@ -1,358 +1,205 @@
 <div>
+<style>
+  @keyframes moveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
 
+  .anime-img {
+    animation: moveUpDown 3s ease-in-out infinite;
+  }
+</style>
 
-    @section("page_cover")
-    <li>
-        <div class="background-img zoom">
-            <video id="currentvideo" width="auto" height="auto" autoplay loop muted controls>
-                <source src="/videos/house.mov">
-            </video>
-        </div>
-        <!--Container-->
-        <div class="container hero-content">
-            <!--Row-->
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <!--Inner hero-->
-                    <div class="inner-hero">
-                        <!-- <div class="back-rect"></div> -->
-                        <h1 class="large text-white uppercase mb-0">{{env("APP_NAME")}}</h1>
-                        <!-- <div class="front-rect"></div> -->
-                    </div>
-                </div>
-                <!--End row-->
-            </div>
-            <!--End container-->
-        </div>
-        <!--End inner hero-->
-    </li>
-    <li>
-        <div class="background-img overlay zoom">
-            <img src="/frontend/html/img/1.jpg" alt="">
-        </div>
-        <!--Container-->
-        <div class="container hero-content">
-            <!--Row-->
-            <div class="row">
-                <div class="col-sm-12 text-center">
-                    <!--Inner hero-->
-                    <div class="inner-hero">
-                        <div class="back-rect"></div>
-                        <h1 class="large text-white uppercase mb-0">welcome to {{env("APP_NAME")}}</h1>
-                        <h5 class="mb-0 text-white uppercase">Live performace & new releases</h5>
-                        <div class="front-rect"></div>
-                    </div>
-                </div>
-                <!--End row-->
-            </div>
-            <!--End container-->
-        </div>
-        <!--End inner hero-->
-    </li>
-    @endsection
-
-
-    <!--End hero section-->
-    <!--Latest album section-->
-    <section id="album" class="latest main bg-light">
-        <!--Container-->
-        <div class="container">
-            <!--Row-->
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="card" style="width: 100%;">
-                        <div class="card-body">
-                            <video id="currentvideo" width="100%" src="{{$currentVideo}}" height="auto" autoplay loop muted controls>
-                            </video>
+    <section class="banner overflow-hidden" style="overflow: hidden ;">
+        <div id="particles-js"></div>
+        <div class="slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image:url(/images/1.png)"></div>
+                            <div class="swiper-content container">
+                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-warning">-X</SPan></h1>
+                                <p class="white mb-0"> Introducing Radar X, known to the world as "THE VYBE MAGIXIAN." He's a Transformative Junkie, an artist whose work
+                                    opens the door to boundless possibilities and defies limits, echoing the mantra that "anything is possible" with every
+                                    note and brushstroke. Radar X's creative process is a symphony of expression, where he seamlessly blends various art forms.
+                                    In his world, music, visuals, and words converge to create a breathtaking tapestry of creativity.</p>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="mid-overlay"></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <video width="100%" height="200px" src="/videos/website.mov" autoplay loop muted controls>
-                               
-                            </video>
-                            <!-- <p>Welcome Video</p> -->
-                            <button class="btn btn-danger" onclick="changeVideo('/videos/website.mov')">Play</button>
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image:url(/images/2.jpeg)"></div>
+                            <div class="swiper-content1 container">
+                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-warning">-X</SPan></h1>
+                                <p class="white mb-0">
+                                    But Radar X's journey goes beyond this lifetime; it extends across lifetimes, marking a cosmic odyssey of
+                                    evolution that transcends boundaries and challenges norms. His artistry isn't confined to the studio or the stage.
+                                    Radar X is an energetic creative who fuses stage theatre, poetry, and tricks into his live performances. He describes his
+                                    genre as Afro-future, as he not only experiments with his music but also with the perspective at which his sound is interpreted,
+                                    using visual branding elements to enhance the experience
+                                </p>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="mid-overlay"></div>
                         </div>
                     </div>
-                </div>
-                <div class="col-4">
-                    <div class="card" style="width: 18rem;">
-                        <div class="card-body">
-                            <video width="100%" height="200px" autoplay loop muted controls>
-                                <source src="/videos/house.mov">
-                            </video>
-                            <!-- <p>Welcome Video</p> -->
-                            <button class="btn btn-danger" onclick="changeVideo('/videos/house.mov')">Play</button>
+                    <div class="swiper-slide">
+                        <div class="slide-inner">
+                            <div class="slide-image" style="background-image:url(/images/4.jpeg)"></div>
+                            <div class="swiper-content2 container">
+                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-warning">-X</SPan></h1>
+                                <p class="white mb-0">Yet, beyond his art, Radar X possesses a unique superpower — that of building bridges. He's dedicated to connecting
+                                    Africa through the enchantment of entertainment and technology. He nurtures a community of MagiXians, catalysts for a
+                                    cultural renaissance, seamlessly merging tradition with innovation. In the enchanting world of Radar X, the Vybe Magixian,
+                                    the future of Afro creations unfolds, where every
+                                    moment is a testament to the limitless possibilities of art and the power of connectivity. 🌟🎶✨</p>
+                            </div>
+                            <div class="overlay"></div>
+                            <div class="mid-overlay"></div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!--End row-->
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-        <!--End container-->
-        <script>
-            function changeVideo(url) {
-
-                // Get the video element
-                var video = document.getElementById("currentvideo");
-                video.style.display = "none";
-                // Change the source URL
-                video.src = url;
-
-                // Load the new video source
-                video.load();
-
-                // Play the video
-                video.play();
-            }
-        </script>
     </section>
-    <!--End latest album section-->
-    <!--About section-->
-    <section id="about" class="about overlay main">
-        <div class="background-img">
-            <img src="/frontend/html/img/25.jpg" alt="">
-        </div>
-        <!--Container-->
+
+
+
+    <section class="about-us pb-6 bubbles" style="background-image: url(/radar-x/images/bg/bg1.jpg);">
         <div class="container">
-            <!--Row-->
-            <div class="row  vertical-align">
-                <div class="col-lg-4 col-md-12">
-                    <div class="front-p">
-                        <h1 class="uppercase text-white">About RadarX</h1>
-                        <p class=" w-93">
-                            Introducing Radar X, known to the world as "THE VYBE MAGIXIAN." He's a Transformative Junkie,
-                            an artist whose work opens the door to boundless possibilities and defies limits, echoing the
-                            mantra that "anything is possible" with every note and brushstroke.
-
-                            Radar X's creative process is a symphony of expression, where he seamlessly blends various art forms.
-                            In his world, music, visuals, and words converge to create a breathtaking tapestry of creativity.
-
-                        </p>
-
+            <div class="about-inner">
+                <div class="row d-md-flex align-items-center">
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <div class="left-side-content">
+                            <h3 class="white mb-0">Videos</h3>
+                            <h2 class="mb-0 red">
+                                <span class="discount-price">Radar</span> x
+                            </h2>
+                            <p class="white mb-4">
+                                <iframe width="100%" src="https://www.youtube.com/embed/YnS4RtyILJs?si=E-X1xxttH3N9o3FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            </p>
+                            <a href="#" class="nir-btn">More Videos</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-4">
-
-                    <div class="block-content front-p pt-3 pb-3 text-center rounded bg-red mb-4 mb-lg-0">
-                        <p>But Radar X's journey goes beyond this lifetime; it extends across lifetimes, marking a cosmic odyssey
-                            of
-                            evolution that transcends boundaries and challenges norms.
-
-                            His artistry isn't confined to the studio or the stage. Radar X is an energetic creative who fuses
-                            stage
-                            theatre, poetry, and tricks into his live performances. He describes his genre as Afro-future, as he
-                            not
-                            only experiments with his music but also with the perspective at which his sound is interpreted, using
-                            visual
-                            branding elements to enhance the experience.</p>
+                    <div class="col-lg-6 col-md-12 d-flex mb-4">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="about-image-box">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/YnS4RtyILJs?si=E-X1xxttH3N9o3FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6">
+                                <div class="about-image-box mb-2">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/YnS4RtyILJs?si=E-X1xxttH3N9o3FN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                                <div class="about-image-box">
+                                    <iframe width="100%" src="https://www.youtube.com/embed/0ekm_4x5JY0?si=JB9mhvntiWxOPWzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-
-                </div>
-                <div class="col-md-4">
-                    <div class="block-content pt-3 pb-3 text-center rounded bg-dark-blue front-p mb-4 mb-lg-0">
-                        <p>Yet, beyond his art, Radar X possesses a unique superpower — that of building bridges. He's dedicated
-                            to
-                            connecting Africa through the enchantment of entertainment and technology. He nurtures a community of
-                            MagiXians,
-                            catalysts for a cultural renaissance, seamlessly merging tradition with innovation.
-
-                            In the enchanting world of Radar X, the Vybe Magixian, the future of Afro creations unfolds, where
-                            every
-                            moment is a testament to the limitless possibilities of art and the power of connectivity. 🌟🎶✨</p>
-
-                    </div>
-                    <ul class="block-social list-inline mb-4 mb-lg-0">
-                        <li class="list-inline-item mr-0"><a href="#"><i class="socicon-apple"></i></a></li>
-                        <li class="list-inline-item mr-0"><a href="#"><i class="socicon-play"></i></a></li>
-                        <li class="list-inline-item mr-0"><a href="#"><i class="socicon-amazon"></i></a></li>
-                        <li class="list-inline-item mr-0"><a href="#"><i class="socicon-spotify"></i></a></li>
-                        <li class="list-inline-item mr-0"><a href="#"><i class="socicon-soundcloud"></i></a></li>
-                    </ul>
                 </div>
             </div>
-            <!--End row-->
         </div>
-        <!--End container-->
+        <div class="overlay"></div>
+        <div class="mid-overlay"></div>
     </section>
-    <!--End about section-->
+    <!--  -->
 
-    <h2 class="w3-center">Recent Pictures</h2>
 
-    <div class="w3-content w3-display-container">
-        @foreach($gallery as $ga)
-        <img class="mySlides" src="/storage/{{$ga->url}}" style="width:100%">
-        @endforeach
+    <style>
+        .staff-list img {
+            height: 300px;
+        }
+    </style>
 
-        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
-        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+
+
+    <section class="insta-main p-0">
+        <div class="insta-inner">
+            <div class="follow-button">
+                <h5 class="m-0"><a href="#" title="">our gallary</a></h5>
+            </div>
+            <div class="row attract-slider">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/4.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/4.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/4.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/2.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/3.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/4.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/5.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/4.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="insta-image">
+                        <a href="#"><img src="/images/14.jpeg" alt="insta"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <style>
+        .insta-image img {
+            height: 200px;
+        }
+    </style>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-6 offset-md-3">
+                <img class="anime-img" src="/images/1.png" alt="">
+            </div>
+        </div>
     </div>
 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ekm_4x5JY0?si=JB9mhvntiWxOPWzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
 
-    <!--Discography section-->
-    <section id="discography" class="discography main">
-        <!--Container-->
-        <div class="container">
-            <!--Row-->
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-9 ">
-                    <div class="block-content text-center gap-one-bottom-md">
-                        <div class="block-title ">
-                            <h1 class="uppercase">Discography</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End row-->
-        </div>
-        <!--End container-->
-        <!--Container-->
-        <div class="container">
-            <!--Row-->
-            <div class="row">
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="block-album block-content">
-                        <h5 class="mb-0 opc-70 uppercase">Limitless</h5>
-                        <a class="link" href="#">View Album ›</a>
-                        <a href="#">
-                            <img class="animated" src="/frontend/html/img/album/1.jpg" alt="">
-                        </a>
-                        <ul class="block-social list-inline mb-md-3">
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-apple"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-play"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-amazon"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-soundcloud"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="block-album block-content">
-                        <h5 class="mb-0 opc-70 uppercase">Set me free</h5>
-                        <a class="link" href="#">View Album ›</a>
-                        <a href="#">
-                            <img class="animated" src="/frontend/html/img/album/2.jpg" alt="">
-                        </a>
-                        <ul class="block-social list-inline mb-md-3">
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-apple"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-play"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-amazon"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-soundcloud"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="block-album block-content">
-                        <h5 class="mb-0 opc-70 uppercase">How It Feels</h5>
-                        <a class="link" href="#">View Album ›</a>
-                        <a href="#">
-                            <img class="animated" src="/frontend/html/img/album/3.jpg" alt="">
-                        </a>
-                        <ul class="block-social list-inline mb-md-3">
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-apple"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-play"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-amazon"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-soundcloud"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6 col-lg-3">
-                    <div class="block-album block-content">
-                        <h5 class="mb-0 uppercase opc-70">Tonight</h5>
-                        <a class="link" href="#">View Album ›</a>
-                        <a href="#">
-                            <img class="animated" src="/frontend/html/img/album/4.jpg" alt="">
-                        </a>
-                        <ul class="block-social list-inline mb-md-3">
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-apple"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-play"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-amazon"></i></a></li>
-                            <li class="list-inline-item mr-0"><a href="#"><i class="socicon-soundcloud"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <!--End row-->
-        </div>
-        <!--End container-->
-    </section>
-    <!--End discography section-->
-    <!--Divider section-->
-    <section class="divider overlay">
-        <div class="background-img">
-            <img src="/frontend/html/img/4.jpg" alt="">
-        </div>
-        <!--Container-->
-        <div class="container">
-            <!--Row-->
-            <div class="row justify-content-center">
-                <div class="col-12 col-lg-10 ">
-                    <div class="block-content text-center front-p">
-                        <h1 class="uppercase">Time left until the upcoming tour </h1>
-                        <p class="lead">Count down... </p>
-                        <div class="countdown uppercase  mb-0"></div>
-                    </div>
-                </div>
-            </div>
-            <!--End row-->
-        </div>
-        <!--End container-->
-    </section>
-    <!--End divider section-->
-    <!--Band members section-->
-    <section id="band" class="band main ">
-        <!--Container-->
-        <div class="container">
-            <!--Row-->
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10 col-lg-9">
-                    <div class="block-content text-center gap-one-bottom-md">
-                        <div class="block-title ">
-                            <h1 class="uppercase"></h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--End row-->
-        </div>
-        <!--End container-->
-        <!--Container-->
-        <div class="container">
-            <!--Row-->
-            <div class="row">
-                <div class="col-md-4 col-lg-4">
-                    <div class="block-member">
-                        <img src="/frontend/html/img/5.jpg" alt="">
-                        <!-- <div class="member-info">
-                           <h6 class="uppercase mb-0 ">Joe Walker</h6>
-                           <span class=" mt-0"> Lead vocals,guitars</span>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="block-member">
-                        <img src="/frontend/html/img/6.jpg" alt="">
-                        <!-- <div class="member-info">
-                           <h6 class="uppercase mb-0 ">Andrew Smith</h6>
-                           <span class=" mt-0"> Lead guitar, bass guitar</span>
-                        </div> -->
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4">
-                    <div class="block-member">
-                        <img src="/frontend/html/img/7.jpg" alt="">
-                        <!-- <div class="member-info">
-                           <h6 class="uppercase mb-0 ">Jeremy Anderton</h6>
-                           <span class=" mt-0">Drums, keyboards</span>
-                        </div> -->
-                    </div>
-                </div>
-            </div>
-            <!--End row-->
-        </div>
-        <!--End container-->
-    </section>
 </div>

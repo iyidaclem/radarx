@@ -2,6 +2,7 @@
 
 use App\Livewire\Community;
 use App\Livewire\Contact;
+use App\Livewire\Events;
 use App\Livewire\Gallery;
 use App\Livewire\Merch;
 use App\Livewire\Video;
@@ -28,7 +29,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 // Route::middleware("auth")->group(function(){
 
     Route::get("/videos", Video::class);
-    Route::get("/gallery", Gallery::class);
+    Route::get("/events", Events::class);
     Route::get("/community", Community::class);
     Route::get("/contact", Contact::class);
     Route::get("/merch", Merch::class);
