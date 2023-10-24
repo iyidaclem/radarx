@@ -17,7 +17,7 @@
                                 <div class="swiper-content top54 w-100 container">
                                     <div class="row d-lg-flex align-items-center justify-content-between">
                                         <div class="col-lg-7 col-md-12">
-                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-danger">x</span></span> <span class="text-danger"> Events</span> </h1>
+                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-success">x</span></span> <span class="text-success"> Events</span> </h1>
                                         </div>
                                         <div class="col-lg-5 col-md-12">
                                             <div class="swi-image"><img src="/radar-x/img/about.png" alt=""></div>
@@ -33,7 +33,7 @@
                                 <div class="swiper-content top54 w-100 container">
                                     <div class="row d-lg-flex align-items-center justify-content-between">
                                         <div class="col-lg-7 col-md-12">
-                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-danger">x</span></span> <span class="text-danger"> Events</span></h1>
+                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-success">x</span></span> <span class="text-success"> Events</span></h1>
 
 
                                             <!-- <p class="white mb-4">Primis aptent vel turpis a a class suspendisse et augue orci a diam tristique consequat hendrerit ullamcorper torquent </p> -->
@@ -53,7 +53,7 @@
                                 <div class="swiper-content top54 w-100 container">
                                     <div class="row d-lg-flex align-items-center justify-content-between">
                                         <div class="col-lg-7 col-md-12">
-                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-danger">x</span></span> <span class="text-danger"> Events</span></h1>
+                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-success">x</span></span> <span class="text-success"> Events</span></h1>
                                             <!-- <p class="white mb-4">Primis aptent vel turpis a a class suspendisse et augue orci a diam tristique consequat hendrerit ullamcorper torquent </p> -->
                                             <!-- <a href="#" class="nir-btn">Read More</a> -->
                                         </div>
@@ -71,7 +71,7 @@
                                 <div class="swiper-content top54 w-100 container">
                                     <div class="row d-lg-flex align-items-center justify-content-between">
                                         <div class="col-lg-7 col-md-12">
-                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-danger">x</span></span> <span class="text-danger"> Events</span></h1>
+                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-success">x</span></span> <span class="text-success"> Events</span></h1>
                                             <!-- <p class="white mb-4">Primis aptent vel turpis a a class suspendisse et augue orci a diam tristique consequat hendrerit ullamcorper torquent </p> -->
                                             <!-- <a href="#" class="nir-btn">Read More</a> -->
                                         </div>
@@ -89,7 +89,7 @@
                                 <div class="swiper-content top54 w-100 container">
                                     <div class="row d-lg-flex align-items-center justify-content-between">
                                         <div class="col-lg-7 col-md-12">
-                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-danger">x</span></span> <span class="text-danger"> Events</span></h1>
+                                            <h1 class="white mb-2"><span class="text-warning">Radar <span class="text-success">x</span></span> <span class="text-success"> Events</span></h1>
                                             <!-- <p class="white mb-4">Primis aptent vel turpis a a class suspendisse et augue orci a diam tristique consequat hendrerit ullamcorper torquent </p> -->
                                             <!-- <a href="#" class="nir-btn">Read More</a> -->
                                         </div>
@@ -128,42 +128,45 @@
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
 
-                        <div class="modal-body">
-                            <h6>Event Cover image</h6>
-                            {{$image}}
-                            <input type="text" id="cover_image_url" wire:model="image" class="w-100 m-3" placeholder="Cover image url">
-                            @error("image")
-                            <div class="alert alert-danger">{{$message}}</div>
-                            @enderror
-                            
-                            <h6>Title</h6>
-                            <input type="text" placeholder="Enter event title" wire:model="title" class="w-100 m-3">
-                            @error("title")
-                            <div class="alert alert-danger">{{$message}}</div>
-                            @enderror
-                            <h6>Brief description</h6>
-                            <textarea wire:model="info" class="w-100 m-3" style="width: 100%; height:200px" class="text-muted">Describe the event</textarea>
-                            @error("info")
-                            <div class="alert alert-danger">{{$message}}</div>
-                            @enderror
-                            <h6>Price</h6>
-                            <input wire:model="price" type="number" class="w-100 m-3">
-                            @error("price")
-                            <div class="alert alert-danger">{{$message}}</div>
-                            @enderror
-                            <h6>Event URL</h6>
-                            <input wire:model="url" type="text" class="w-100 m-3">
-                            @error("ur")
-                            <div class="alert alert-danger">{{$message}}</div>
-                            @enderror
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <a type="button" class="btn btn-primary" wire:click="addEvent">Submit</a>
-                        </div>
+                        <form action="{{route('create-event')}}" method="post">
+                            @csrf
+                            <div class="modal-body" wire:ignore.self>
+                                <h6>Event Cover image</h6>
+                                <input type="text" id="cover_image_url" name="image" class="w-100 m-3" placeholder="Cover image url">
+                                @error("image")
+                                <div class="alert alert-danger">{{$message}}</div>
+                                @enderror
+
+                                <h6>Title</h6>
+                                <input type="text" placeholder="Enter event title" name="title" class="w-100 m-3">
+                                @error("title")
+                                <div class="alert alert-danger">{{$message}}</div>
+                                @enderror
+                                <h6>Brief description</h6>
+                                <textarea name="info" class="w-100 m-3" style="width: 100%; height:200px" class="text-muted">Describe the event</textarea>
+                                @error("info")
+                                <div class="alert alert-danger">{{$message}}</div>
+                                @enderror
+                                <h6>Price</h6>
+                                <input name="price" type="number" class="w-100 m-3">
+                                @error("price")
+                                <div class="alert alert-danger">{{$message}}</div>
+                                @enderror
+                                <h6>Event URL</h6>
+                                <input name="url" type="text" class="w-100 m-3">
+                                @error("ur")
+                                <div class="alert alert-danger">{{$message}}</div>
+                                @enderror
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                               <input type="submit" value="Submit" class="btn btn-primary">
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
+
         </section>
         <section class="about-us about-home pb-10" style="overflow: hidden ;">
             <div class="container">
@@ -173,7 +176,7 @@
                         <h3 class="text-light">No Event available</h3>
                         @endif
                         @foreach($this->getEvent() as $event)
-                        <div class="col-lg-3">
+                        <div class="col-6 offset-3 offset-lg-0 col-lg-3 mb-3">
                             <div class="card p-3" style="width: 100%; height: 500px; background-color: rgba(128, 0, 128, 0.25); color: yellow;">
                                 <img style="height: 280px;" src="{{$event->image}}" class="card-img-top" alt="...">
 

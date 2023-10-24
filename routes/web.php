@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\EventController;
 use App\Livewire\Community;
 use App\Livewire\Contact;
 use App\Livewire\Events;
@@ -34,4 +35,6 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get("/contact", Contact::class);
     Route::get("/merch", Merch::class);
 
+    Route::post("/event", [EventController::class, 'createEvent'])->name("create-event");
+    Route::post("/merch", [EventController::class, 'createMerch'])->name("create-merch");
 // });

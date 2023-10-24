@@ -24,7 +24,21 @@
         html {
             background-color: black !important;
         }
+
+        @media screen and (max-width: 990px) {
+
+            ul {
+                width: 100vw;
+                height: 100vh;
+            }
+
+        }
+
+        ul li:hover {
+            border-bottom: 2px solid green;
+        }
     </style>
+
     @livewireStyles
 </head>
 
@@ -42,19 +56,17 @@
             <nav class="navbar navbar-default">
                 <div class="container">
                     <div class="navbar-flex d-flex align-items-center k justify-content-between w-100 pb-2 pt-2">
-
-                        <div class="navbar-header">
-                            <a class="navbar-brand" href="/">
-                                <h1 class="text-muted">Radar X</h1>
-                            </a>
-                        </div>
-
+                        <a class="navbar-brand" href="/">
+                            <img width="60px" src="/images/logo.png" alt="">
+                        </a>
                         <div class="navbar-collapse1 d-lg-flex align-items-center" id="bs-example-navbar-collapse-1">
                             <ul class="nav navbar-nav" id="responsive-menu">
 
                                 <li><a class="pp" href="/">Home</a></li>
                                 <li><a class="pp" href="/events">Events</a></li>
-                                <li><a class="pp" href="/merch">merch</a></li>
+                                <li><a class="pp" href="/merch">Merch</a></li>
+                                <li><a class="pp" href="/community">Community</a></li>
+                                <li><a class="pp" href="/">Xdezigna</a></li>
                                 @if(auth::check())
                                 <li><a href="javascript:void" onclick="document.getElementById('logout').click()"><button class="btn btn-danger">Logout</button></a></li>
                                 <form action="{{route('logout')}}" method="POST">
@@ -120,10 +132,10 @@
                     </div>
                     <div class="social-links">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
+                            <li><a href="https://linktr.ee/radar_x"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="https://linktr.ee/radar_x"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="https://linktr.ee/radar_x"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+                            <li><a href="https://linktr.ee/radar_x"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
                 </div>

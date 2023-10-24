@@ -26,7 +26,7 @@
                         <div class="slide-inner">
                             <div class="slide-image" style="background-image:url(/images/1.png)"></div>
                             <div class="swiper-content container">
-                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-warning">-X</SPan></h1>
+                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-success">-X</SPan></h1>
                             </div>
                             <div class="overlay"></div>
                             <div class="mid-overlay"></div>
@@ -34,9 +34,9 @@
                     </div>
                     <div class="swiper-slide">
                         <div class="slide-inner">
-                            <div class="slide-image" style="background-image:url(/images/2.jpeg)"></div>
+                            <div class="slide-image" style="background-image:url(/images/bg.png)"></div>
                             <div class="swiper-content1 container">
-                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-warning">-X</SPan></h1>
+                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-success">-X</SPan></h1>
                             </div>
                             <div class="overlay"></div>
                             <div class="mid-overlay"></div>
@@ -46,7 +46,7 @@
                         <div class="slide-inner">
                             <div class="slide-image" style="background-image:url(/images/4.jpeg)"></div>
                             <div class="swiper-content2 container">
-                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-warning">-X</SPan></h1>
+                                <h1 class="white mb-1">Welcome to Radar<SPan class="text-success">-X</SPan></h1>
                             </div>
                             <div class="overlay"></div>
                             <div class="mid-overlay"></div>
@@ -82,12 +82,12 @@
                         <div class="row">
                             <div class="col-lg-6 col-md-6">
                                 <div class="about-image-box">
-                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/2nj_hby6qLg?si=sf9qYGbHJEcX4rlO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/2nj_hby6qLg?si=sf9qYGbHJEcX4rlO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <div class="col-lg-6 col-md-6">
                                 <div class="about-image-box mb-2">
-                                <iframe width="100%" height="auto" src="https://www.youtube.com/embed/A3LjvW1fXM8?si=zV5_BPVZ55qhnO_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/A3LjvW1fXM8?si=zV5_BPVZ55qhnO_t" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                                 </div>
                                 <div class="about-image-box">
                                     <iframe width="100%" src="https://www.youtube.com/embed/0ekm_4x5JY0?si=JB9mhvntiWxOPWzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -175,14 +175,14 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3 text-center">
-                <img class="anime-img" src="/images/1.png" alt="">
+                <img style="height: 100vh;" class="anime-img" src="/images/1.png" alt="">
             </div>
         </div>
     </div>
     <div class="container-fluid bg-dark p-5 mt-5 mb-5">
         <div class="row">
             <div class="col-12">
-                <h1 class="text-danger">About Radar X</h1>
+                <h1 class="text-success">About Radar X</h1>
             </div>
             <div class="col-md-4">
                 <p class="white mb-3"> Introducing Radar X, known to the world as "THE VYBE MAGIXIAN." He's a Transformative Junkie, an artist whose work
@@ -208,16 +208,20 @@
 
             </div>
         </div>
-        </div>
+    </div>
     <div class="container-fluid">
-        <div class="row">
+        <div class="row bubbles">
             <div class="col-md-6 offset-md-3">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/0ekm_4x5JY0?si=JB9mhvntiWxOPWzO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <div class="text-center">
+                <h1 class="display-1 text-success">Musics</h1>
+                </div>
+            <iframe style="border-radius:12px" src="https://open.spotify.com/embed/artist/61sgW29lXEHcAgCfaSmoEj?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                
             </div>
             <div class="col-md-2"></div>
         </div>
     </div>
 
-   
+
 
 </div>
