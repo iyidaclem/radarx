@@ -25,7 +25,7 @@ class Events extends Component
     }
     public function addEvent()
     {
-        dd($this->image);
+      
         $this->validate([
             "image" => "required",
             "title" => "required",

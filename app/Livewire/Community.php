@@ -8,6 +8,6 @@ class Community extends Component
 {
     public function render()
     {
-        return view('livewire.community')->layout("layouts.app");
+        return view('livewire.community')->extends("layouts.app");
     }
 }
