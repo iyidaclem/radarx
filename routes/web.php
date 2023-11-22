@@ -8,6 +8,7 @@ use App\Livewire\Gallery;
 use App\Livewire\Merch;
 use App\Livewire\Video;
 use App\Livewire\Welcome;
+use App\Livewire\Xdezigna;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -34,6 +35,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
     Route::get("/community", Community::class);
     Route::get("/contact", Contact::class);
     Route::get("/merch", Merch::class);
+    Route::get("/xdezigna", Xdezigna::class);
 
     Route::post("/event", [EventController::class, 'createEvent'])->name("create-event");
     Route::post("/merch", [EventController::class, 'createMerch'])->name("create-merch");

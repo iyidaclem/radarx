@@ -4,51 +4,47 @@ namespace App\Livewire;
 
 use App\Models\Event;
 use Livewire\Component;
+use Livewire\WithFileUploads;
 
 class Events extends Component
 {
-    public $image = "Edit content";
-    public $title = "Edit content";
-    public $info = "Edit content";
+    use WithFileUploads;
+    public $image;
+    public $title;
+    public $info;
     public $price = 0;
-    public $url = "Edit content";
-    public $deleteId = "Edit content";
+    public $url;
+    public $deleteId;
 
     public function render()
     {
         return view('livewire.events')->extends("layouts.app");
     }
 
+    public function createEvent()
+    {
+        $this->validate([
+            "image" => "required|mimes:jpeg,jpg,png,gif|max:20000",
+            "title" => "required",
+            "url" => "required"
+        ]);
+
+        $path = "storage/" . $this->image->store("/public/images");
+        $path = explode("/public", $path);
+        $path = $path[0] . $path[1];
+        $path = URL($path);
+        $event = new Event();
+        $event->user_id = auth()->user()->id;
+        $event->title = $this->title;
+        $event->url = $this->url;
+        $event->image = $path;
+        $event->save();
+        return redirect(URL("event"));
+    }
+
     public function getEvent()
     {
         return Event::latest()->paginate("10");
-    }
-    public function addEvent()
-    {
-      
-        $this->validate([
-            "image" => "required",
-            "title" => "required",
-            "info" => "required",
-            "price" => "required",
-            "url" => "required",
-
-        ]);
-
-
-        Event::create(
-            [
-                "user_id" =>   auth()->user()->id,
-                "image" => $this->image,
-                "title" => $this->title,
-                "info" => $this->info,
-                "price" => $this->price,
-                "url" => $this->url
-            ]
-
-        );
-
-        return redirect("/events");
     }
 
     public function changeDeleteId($id)
@@ -56,9 +52,9 @@ class Events extends Component
         $this->deleteId = $id;
     }
 
-    public function deleteEvent()
+    public function deleteEvent($id)
     {
-        $event = Event::find($this->deleteId);
+        $event = Event::find($id);
 
         if ($event) {
             $event->delete();

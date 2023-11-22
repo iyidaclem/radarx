@@ -35,22 +35,17 @@
                 <h3 class=""><small>SOCIALS</small></h6>
                     <ul class="socials footer-item">
                         <li>
-                            <a href="">
-                                <i class="bi bi-instagram"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
+                            <a href="https://linktr.ee/radar_x">
                                 <i class="bi bi-facebook"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://linktr.ee/radar_x">
                                 <i class="bi bi-apple"></i>
                             </a>
                         </li>
                         <li>
-                            <a href="">
+                            <a href="https://www.instagram.com/radar_xtraordinary/">
                                 <i class="bi bi-instagram"></i>
                             </a>
                         </li>
@@ -61,8 +56,8 @@
                     <small>QUICK LINKS</small>
                 </h3>
                 <ul class="qk-links footer-item">
-                    <li>Events</li>
-                    <li>Contact</li>
+                    <li><a href="/events">Events</a></li>
+                    <li><a href="/community">Contact</a></li>
                 </ul>
             </div>
             <div class="col-12 text-center">

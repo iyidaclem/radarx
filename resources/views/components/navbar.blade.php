@@ -4,6 +4,8 @@
         .main_nav {
             background-color: #161616;
             padding: 10px;
+            justify-content: center;
+            align-items: center;
         }
 
         .nav_ul {
@@ -26,11 +28,17 @@
             cursor: pointer;
         }
 
-        li a {
+        a {
 
             color: white !important;
             text-decoration: none !important;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
+
+
 
         li {
             /* Set initial text decoration properties */
@@ -99,17 +107,30 @@
         <div class="row d-flex">
             <div class="col-4">
                 <div class="d-flex align-items-center justify-items-center">
-                    <img src="/images/logo.png" alt="" height="50px">
-                    <h3>RADAR <span class="text-success">X</span></h3>
+                    <a href="/">
+                        <h3>RADAR </h3>
+                        <img src="/images/logo.png" alt="" height="50px">
+                    </a>
                 </div>
             </div>
             <div class="col-8 menu">
                 <ul class="nav_ul">
+                    @if(auth::check())
+                    <li><a href="/home">Dashboard</a></li>
+                    @else
                     <li><a href="/">Home</a></li>
+                    @endif
                     <li><a href="/events">Events</a></li>
                     <li><a href="/merch">Merch</a></li>
                     <li><a href="/community">Community</a></li>
                     <li><a href="/xdezigna">Xdezigna</a></li>
+                    @if(auth::check())
+                    <li><a class="btn btn-danger" href="javascript:void" onclick="document.getElementById('logout').click()">Logout</a></li>
+                    <form action="{{route('logout')}}" method="POST">
+                        @csrf
+                        <input class="d-none" type="submit" value="Logout" id="logout">
+                    </form>
+                    @endif
                 </ul>
             </div>
             <div class="col-8 d-md-none togglers" style="z-index: 999999;">

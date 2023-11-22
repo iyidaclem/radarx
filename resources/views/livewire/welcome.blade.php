@@ -131,6 +131,12 @@
             text-align: center;
             margin-top: 50px;
         }
+
+        .anim-div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     </style>
 
     <div class="row">
@@ -141,26 +147,10 @@
             </h1>
 
             <div class="slide" style="background-image: url('/images/bg.png')"></div>
-
-            <div class="slide" style="background-image: url('/images/5.jpeg')"></div>
-
-            <div class="slide" style="background-image: url('/images/2.jpeg')"></div>
-
-            <div class="slide" style="background-image: url('/images/3.jpeg')"></div>
-
-            <div class="slide" style="background-image: url('/images/4.jpeg')"></div>
-
-            <div class="slide" style="background-image: url('/images/10.jpeg')"></div>
-
-            <div class="slide" style="background-image: url('/images/1.png')"></div>
+            <div class="slide" style="background-image: url('/images/bg.png')"></div>
 
 
             <div class="controls-container">
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
-                <div class="control"></div>
                 <div class="control"></div>
                 <div class="control"></div>
             </div>
@@ -194,7 +184,7 @@
                 <li>My Alter Ego</li>
                 <small>My Alter Ego</small>
 
-                <div>
+                <div class="anim-div">
                     <img style="height: 100vh;" class="anime-image" src="/images/1.png" alt="">
                 </div>
 
@@ -208,7 +198,7 @@
         let prevActive = 0;
 
         changeSlides();
-        let int = setInterval(changeSlides, 4000);
+        let int = setInterval(changeSlides, 10000);
 
         function changeSlides() {
             slides[prevActive].classList.remove('active');
@@ -234,7 +224,7 @@
                 changeSlides();
 
                 clearInterval(int);
-                int = setInterval(changeSlides, 4000);
+                int = setInterval(changeSlides, 1000);
             });
         });
     </script>
